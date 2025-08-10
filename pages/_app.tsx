@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         })(window,document,'script','dataLayer','GTM-TQ5B6443')
         `}}
     />
+    <Navbar/>
   <Component {...pageProps} />
   </>
 }
